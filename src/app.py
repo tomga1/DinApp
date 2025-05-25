@@ -10,7 +10,7 @@ from routes.ingresos import ingresos
 load_dotenv()
 
 app = Flask(__name__)
-init_app(app)  # aquí queda app.config["MONGO_URI"] y mongo.init_app(app)
+init_app(app) 
 
 @app.route('/')
 def index():
