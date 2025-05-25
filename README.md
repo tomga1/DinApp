@@ -1,5 +1,6 @@
 💰 DinApp
-DinApp es una aplicación simple de gestión personal para registrar gastos, ingresos y deudas.
+
+Aplicación simple de gestión personal para registrar gastos, ingresos y deudas.
 Ideal para mantener un control financiero básico a través de una API REST.
 
 
