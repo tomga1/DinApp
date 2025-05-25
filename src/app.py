@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from config.mongodb import init_app, mongo
 from routes.ingresos import ingresos
 
+
 load_dotenv()
 
 app = Flask(__name__)

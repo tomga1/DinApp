@@ -1,27 +1,13 @@
-# DinApp
-Aplicacion para gestion de gastos, entradas y deudores
+## DinApp
+DinApp es una aplicación simple de gestión personal para registrar gastos, ingresos y deudas. Ideal para mantener un control financiero básico a través de una interfaz de programación de aplicaciones (API).
+
+## Tecnologias utilizadas 
+
+Python
+Flask – para la construcción de la API REST.
+MongoDB – base de datos NoSQL para almacenar los registros.
+PyMongo – conector entre Python y MongoDB.
+HTTP Verbs – para operaciones CRUD (GET, POST, PUT, DELETE).
+Request / Response – manejo estándar de peticiones/respuestas HTTP.
 
 
-✅ 1. Crear un entorno virtual (agregar entorno)
-python -m venv nombre_del_entorno
-
-⏸️ 2. Pausar/Desactivar entorno virtual
-Una vez activado, puedes desactivarlo con:
-
-deactivate
-
-👀 3. Ver librerías instaladas
-Primero activa el entorno y luego:
-
-pip list
-Esto mostrará todas las librerías instaladas en ese entorno.
-
-
-❌ 4. Borrar entorno virtual
-Simplemente borra la carpeta del entorno (por ejemplo, venv):
-rmdir /s /q venv
-
-💡 Extra: Activar entorno virtual
-Windows (cmd):
-
-venv\Scripts\activate
