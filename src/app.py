@@ -2,6 +2,7 @@
 import os
 from flask import Flask, render_template
 from dotenv import load_dotenv
+from flask_cors import CORS
 
 from config.mongodb import init_app, mongo
 from routes.ingresos import ingresos
@@ -11,12 +12,13 @@ load_dotenv()
 
 app = Flask(__name__)
 init_app(app) 
+CORS(app)
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/test-db')
+@app.route('/test-db') 
 def test_db():
     try:
         mongo.db.test_collection.insert_one({"mensaje": "conexión exitosa"})

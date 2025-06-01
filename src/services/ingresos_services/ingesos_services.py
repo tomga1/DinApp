@@ -12,18 +12,18 @@ def crear_ingresos_services():
     except ValueError:
         return jsonify({"error": "Formato de fecha inválido"}), 400
 
-    title = data.get('title')
-    if not title:
-        return jsonify({"error": "El campo 'title' es obligatorio"}), 400
+    titulo = data.get('titulo')
+    if not titulo:
+        return jsonify({"error": "El campo 'titulo' es obligatorio"}), 400
     
     ingreso = {
-        'title': title,
+        'titulo': titulo,
         'description': data.get('description'),
         'monto': data.get('monto'),
         'id_usuario': data.get('id_usuario'),
         'observacion': data.get('observacion', ''),
         'fecha': fecha,
-        'done': False
+        'categoria': data.get('categoria')
     }
 
     response = mongo.db.ingresos.insert_one(ingreso)

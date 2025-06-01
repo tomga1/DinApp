@@ -18,3 +18,8 @@ Ideal para mantener un control financiero básico a través de una API REST.
 🛠 HTTP Verbs – para operaciones CRUD (GET, POST, PUT, DELETE).
 
 🔄 Request / Response – manejo estándar de peticiones y respuestas HTTP.
+
+
+CORS 
+flask-cors==6.0.0
+
