@@ -9,12 +9,16 @@ from routes.ingresos import ingresos
 from routes.auth import auth
 from bson.objectid import ObjectId
 from models.user import User
+from limiter import limiter
+
 load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = 'clave_secreta'
 init_app(app) 
 CORS(app)
+
+limiter.init_app(app) 
 
 login_manager = LoginManager()
 login_manager.login_view =  'login'
