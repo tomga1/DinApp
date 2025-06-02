@@ -9,7 +9,6 @@ from routes.ingresos import ingresos
 from routes.auth import auth
 from bson.objectid import ObjectId
 from models.user import User
-
 load_dotenv()
 
 app = Flask(__name__)
